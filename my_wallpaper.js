@@ -21,6 +21,23 @@ function wallpaper_background() {
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   rect(40 ,40, rect_width, rect_height);
 }
-rect(225,30,30,30);  createCanvas(400, 400);
+function setup() {
+  createCanvas(400, 400);
+  background(0);
 }
 
+function draw() {
+  // diamond center
+  let x = width / 2;
+  let y = height / 2;
+  
+  // diamond size
+  let d = 100;
+  
+  beginShape();
+  vertex(x, y - d); // top point
+  vertex(x + d, y); // right point
+  vertex(x, y + d); // bottom point
+  vertex(x - d, y); // left point
+  endShape(CLOSE);
+}
