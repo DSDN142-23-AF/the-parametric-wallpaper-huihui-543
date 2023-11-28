@@ -21,4 +21,6 @@ function wallpaper_background() {
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   rect(40 ,40, rect_width, rect_height);
 }
-rect(225,30,30,30);
+rect(225,30,30,30);  createCanvas(400, 400);
+}
+
