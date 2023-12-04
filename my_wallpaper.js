@@ -106,3 +106,23 @@ function draw() {
   line(95, 100, 95, 150); // free
   line(130, 130, 150, 130); // free
 }
+
+function setup() {
+  createCanvas(200, 200);
+  background(0,0,20);
+}
+
+function draw() {
+  stroke(225);
+  
+  fill(255, 0, 0); // red 
+  rect(50, 70, 60, 60); // red rect
+
+  fill(0, 0, 255); // blue 
+  rect(100, 70, 60,60); // blue rect
+
+  
+ fill(90, 2, 54); // purple
+rect(20, 70, 60, 60); // purple rect
+  
+}
