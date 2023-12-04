@@ -18,9 +18,59 @@ function wallpaper_background() {
   background(240, 255, 240); //light honeydew green colour
 }
 
-function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  rect(40 ,40, rect_width, rect_height);
+function setup() {
+  createCanvas(600, 600);
+  background(240);
 }
+
+function draw() {
+ // center ?
+  x = width / 2;
+  
+  // diamond size
+   d = 100;
+
+  fill(255,0,0);
+  beginShape();
+  vertex(x, y - d); // top
+  vertex(x + d, y); // right ?
+  vertex(x, y + d); // bottom ?
+  vertex(x - d, y); // left 
+  endShape(CLOSE);
+
+  fill(15,7,3);
+  rect(200,270,90,30); //first rect
+  rect(width - 290,300,90,30); //sec rect
+}
+
+function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
+}function setup() {
+  createCanvas(600, 600);
+  background(240);
+}
+
+function draw() {
+ // center ?
+  x = width / 2;
+  y = height / 2;
+  
+  // diamond size
+   d = 100;
+
+  fill(255,0,0);
+  beginShape();
+  vertex(x, y - d); // top
+  vertex(x + d, y); // right ?
+  vertex(x, y + d); // bottom ?
+  vertex(x - d, y); // left 
+  endShape(CLOSE);
+
+  fill(15,7,3);
+  rect(200,270,90,30); //first rect
+  rect(width - 290,300,90,30); //sec rect
+}
+
+
 function setup() {
   createCanvas(400, 400);
   background(0);
