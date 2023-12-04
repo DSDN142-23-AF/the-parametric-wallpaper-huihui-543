@@ -26,6 +26,7 @@ function setup() {
 function draw() {
  // center ?
   x = width / 2;
+  y = height / 2;
   
   // diamond size
    d = 100;
