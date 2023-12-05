@@ -15,86 +15,43 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(240, 255, 240); //light honeydew green colour
+  background(240, 255, 240); //turquoise
 }
 
-function setup() {
-  createCanvas(600, 600);
-  background(240);
-}
-
-function draw() {
- // center ?
-  x = width / 2;
-  y = height / 2;
-  
-  // diamond size
-   d = 100;
-
-  fill(255,0,0);
-  beginShape();
-  vertex(x, y - d); // top
-  vertex(x + d, y); // right ?
-  vertex(x, y + d); // bottom ?
-  vertex(x - d, y); // left 
-  endShape(CLOSE);
-
-  fill(15,7,3);
-  rect(200,270,90,30); //first rect
-  rect(width - 290,300,90,30); //sec rect
-}
-
-function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-}function setup() {
-  createCanvas(600, 600);
-  background(240);
-}
-
-function draw() {
- // center ?
-  x = width / 2;
-  y = height / 2;
-  
-  // diamond size
-   d = 100;
-
-  fill(255,0,0);
-  beginShape();
-  vertex(x, y - d); // top
-  vertex(x + d, y); // right ?
-  vertex(x, y + d); // bottom ?
-  vertex(x - d, y); // left 
-  endShape(CLOSE);
-
-  fill(15,7,3);
-  rect(200,270,90,30); //first rect
-  rect(width - 290,300,90,30); //sec rect
-}
-
-
-function setup() {
-  createCanvas(400, 400);
-  background(0);
-}
-
-function draw() {
-  // diamond center
-  let x = width / 2;
-  let y = height / 2;
-  
-  // diamond size
-  let d = 100;
-  
-  beginShape();
-  vertex(x, y - d); // top point
-  vertex(x + d, y); // right point
-  vertex(x, y + d); // bottom point
-  vertex(x - d, y); // left point
-  endShape(CLOSE);
-}
 function my_symbol() {
+  background(64, 224, 208);
+  rectMode(CENTER);
+var x = 100
   
+
+  // first square
+  fill(0,0,139);
+  rect(x, x, x);
+  
+  // second square
+  fill(64, 224, 208);
+  rect(x, x, 70, 70);
+  
+  // tird square
+  fill(0,0,300)
+  rect(x, x, 40, 40);
+
+  stroke('orange'); // Orange color for lines
+  strokeWeight(5); // Line thickness
+  
+  // first horizontal line
+  line(-90, 50, width, 50);
+  
+  // second horizontal line
+  line(-90, 150, width, 150);
+
+  // first vertical line
+  line(50, -120, 50, height);
+  
+  // second vertical line
+  line(150, -120, 150, height);
 }
+
 
 
 
