@@ -18,12 +18,23 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(64,224,208); // turquoise
+  background(64,224,200); // turquoise
+
+  if (strokeW1 > 6) {
+    stroke(255, 0, 0); // red
+  } else {                      
+    stroke(0, 0, 255); // blue
+  }
 
 }
 
+
+
+
+
+
 function my_symbol() {
-  rectMode(CENTER); // center the shapes - help from
+  rectMode(CENTER); // center the shapes - help from AI
 
 strokeWeight(strokeW1)
   // first square
@@ -58,7 +69,7 @@ strokeWeight(strokeW1)
   stroke(255, 215, z); // yellow
   
   line(150, -120, y, height);
-  translate(100, 100); // center the diamond - Help from AI 
+  translate(100, 100); // center the diamond - help from AI 
   stroke('white'); 
   strokeWeight(2); 
   fill(255,z,z);
