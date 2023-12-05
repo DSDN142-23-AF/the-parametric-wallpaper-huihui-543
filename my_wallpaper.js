@@ -92,25 +92,9 @@ function draw() {
   vertex(x - d, y); // left point
   endShape(CLOSE);
 }
-function draw() {
-  background(230,230,270); // 
-
- 
-  fill('yellow'); // yellow 
-  arc(100, 100, 50, 50, 0, PI);
-  fill('blue'); // blue
-  arc(125, 100, 50, 50, PI, 0);
-
-  stroke(0); // black for lines
+function my_symbol() {
   
-  line(200, 100, 95, 150);
-  
-  stroke(0); // black for lines
- 
-  line(95, 100, 95, 150); // free
- 
-  line(130, 130, 150, 130); // free
 }
 
 
-function my_symbol()
+
