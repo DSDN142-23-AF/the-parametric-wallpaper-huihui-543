@@ -107,11 +107,6 @@ function draw() {
   line(130, 130, 150, 130); // free
 }
 
-function setup() {
-  createCanvas(200, 200);
-  background(0,0,20);
-}
-
 function draw() {
   stroke(225);
   
