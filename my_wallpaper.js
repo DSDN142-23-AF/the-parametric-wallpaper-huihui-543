@@ -1,12 +1,15 @@
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
 
+var x = 100;
+var y = 150;
+var z = 0
+let strokeW1 = 2;  
+let strokeW2 = 5;  
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -15,17 +18,16 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(64,224,208); //
+  background(64,224,208); // turquoise
 
 }
 
 function my_symbol() {
-  rectMode(CENTER);
-var x = 100
-  
+  rectMode(CENTER); // center the shapes - help from
 
+strokeWeight(strokeW1)
   // first square
-  fill(0,0,139);
+  fill(z,z,139);
   rect(x, x, x);
   
   // second square
@@ -33,30 +35,41 @@ var x = 100
   rect(x, x, 70, 70);
   
   // tird square
-  fill(0,0,300)
+  fill(z, z,300)
   rect(x, x, 40, 40);
 
   fill(400)
   rect(x,x,20,20);
 
-  strokeWeight(5); // 
-  
+  strokeWeight(strokeW2);
   // first horizontal line
-  stroke('orange');
+  stroke(255, 160, z); // orange
   line(-90, 50, width, 50);
   
   // second horizontal line
-  stroke('purple');
-  line(-90, 150, width, 150);
+  stroke(128, z, 80); // dark purple
+  line(-90, 150, width, y);
 
   // first vertical line
-  stroke('pink')
+  stroke(255, 190, 203) // pastel pink
   line(50, -120, 50, height);
   
   // second vertical line
-  stroke('gold')
-  line(150, -120, 150, height);
+  stroke(255, 215, z); // yellow
+  
+  line(150, -120, y, height);
+  translate(100, 100); // center the diamond - Help from AI 
+  stroke('white'); 
+  strokeWeight(2); 
+  fill(255,z,z);
+  beginShape();
+  vertex(0, -25); // top point
+  vertex(25, 0); // right point
+  vertex(0, 25); // bottom point
+  vertex(-25, 0); // left point
+  endShape(CLOSE);
 }
+ 
 
 
 
