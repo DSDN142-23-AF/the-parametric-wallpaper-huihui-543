@@ -93,31 +93,24 @@ function draw() {
   endShape(CLOSE);
 }
 function draw() {
-  background(230,230,270); //
-  
-  fill('yellow'); // yellow
+  background(230,230,270); // 
+
+ 
+  fill('yellow'); // yellow 
   arc(100, 100, 50, 50, 0, PI);
   fill('blue'); // blue
   arc(125, 100, 50, 50, PI, 0);
+
+  stroke(0); // black for lines
+  
+  line(200, 100, 95, 150);
   
   stroke(0); // black for lines
-  line(200, 100, 95, 150);
-  stroke(0); // black for lines
+ 
   line(95, 100, 95, 150); // free
+ 
   line(130, 130, 150, 130); // free
 }
 
-function draw() {
-  stroke(225);
-  
-  fill(255, 0, 0); // red 
-  rect(50, 70, 60, 60); // red rect
 
-  fill(0, 0, 255); // blue 
-  rect(100, 70, 60,60); // blue rect
-
-  
- fill(90, 2, 54); // purple
-rect(20, 70, 60, 60); // purple rect
-  
-}
+function my_symbol()
