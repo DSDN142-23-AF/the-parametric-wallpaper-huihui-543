@@ -15,11 +15,11 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(240, 255, 240); //turquoise
+  background(64,224,208); //
+
 }
 
 function my_symbol() {
-  background(64, 224, 208);
   rectMode(CENTER);
 var x = 100
   
@@ -36,19 +36,25 @@ var x = 100
   fill(0,0,300)
   rect(x, x, 40, 40);
 
-  stroke('orange'); // Orange color for lines
-  strokeWeight(5); // Line thickness
+  fill(400)
+  rect(x,x,20,20);
+
+  strokeWeight(5); // 
   
   // first horizontal line
+  stroke('orange');
   line(-90, 50, width, 50);
   
   // second horizontal line
+  stroke('purple');
   line(-90, 150, width, 150);
 
   // first vertical line
+  stroke('pink')
   line(50, -120, 50, height);
   
   // second vertical line
+  stroke('gold')
   line(150, -120, 150, height);
 }
 
