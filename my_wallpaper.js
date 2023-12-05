@@ -1,14 +1,14 @@
 //your parameter variables go here!
 
-var x = 100;
-var y = 150;
-var z = 0
-let strokeW1 = 2;  
-let strokeW2 = 5;  
+var x = 300;
+var y = 50;
+var z = 20
+let strokeW1 = 5;  
+let strokeW2 = 0;  
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
@@ -20,7 +20,7 @@ function setup_wallpaper(pWallpaper) {
 function wallpaper_background() {
   background(64,224,200); // turquoise
 
-  if (strokeW1 > 6) {
+  if (strokeW1 < 6) {
     stroke(255, 0, 0); // red
   } else {                      
     stroke(0, 0, 255); // blue
